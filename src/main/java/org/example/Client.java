@@ -27,6 +27,7 @@ public class Client {
 
             String firstLine = buffin.readLine();
             System.out.println("Server: " + firstLine);
+            System.out.print("Communication to the bank >> ");
             String message = sc.nextLine();
             out.println(message);
             firstLine = buffin.readLine();
