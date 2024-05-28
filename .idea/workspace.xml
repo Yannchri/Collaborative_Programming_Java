@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a74769c-d430-495f-a5e7-f5ae3b998832" name="Changes" comment="Push first code">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/state/StateManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/state/StateManagerIdle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Accept_client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Accept_client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Server.java" afterDir="false" />
-    </list>
+    <list default="true" id="0a74769c-d430-495f-a5e7-f5ae3b998832" name="Changes" comment="Server + Client update&#10;Command Pattern" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,12 +21,16 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;MvUltimate&quot;
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "history": [
+    {
+      "assignee": "MvUltimate"
+    }
+  ],
+  "lastFilter": {
+    "assignee": "MvUltimate"
   }
-}</component>
+}]]></component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/Yannchri/Collaborative_Programming_Java.git&quot;,
@@ -162,7 +158,7 @@
       <workItem from="1716540876518" duration="2000" />
       <workItem from="1716541536734" duration="126000" />
       <workItem from="1716541750122" duration="2501000" />
-      <workItem from="1716883634603" duration="24314000" />
+      <workItem from="1716883634603" duration="24766000" />
     </task>
     <task id="LOCAL-00001" summary="Push first code">
       <option name="closed" value="true" />
@@ -172,7 +168,23 @@
       <option name="project" value="LOCAL" />
       <updated>1716541947319</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Server + Client update&#10;Command Pattern">
+      <option name="closed" value="true" />
+      <created>1716915150949</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1716915150949</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Server + Client update&#10;Command Pattern">
+      <option name="closed" value="true" />
+      <created>1716915171178</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1716915171178</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,6 +192,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Push first code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Push first code" />
+    <MESSAGE value="Server + Client update&#10;Command Pattern" />
+    <option name="LAST_COMMIT_MESSAGE" value="Server + Client update&#10;Command Pattern" />
   </component>
 </project>
