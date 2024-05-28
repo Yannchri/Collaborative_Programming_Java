@@ -6,6 +6,8 @@ import java.util.Scanner;
 
 public class Client {
     public static void main(String[] args) {
+        String Firstline;
+
         try {
             // Create a socket to connect to the server at IP 127.0.0.1 (localhost) and port 45000
             Socket client = new Socket("127.0.0.1", 45000);
@@ -23,11 +25,16 @@ public class Client {
             // Create a Scanner to read user input from the console
             Scanner sc = new Scanner(System.in);
 
-            // Start a loop to keep the conversation going until "exit" is written
-            String message;
+            String firstLine = buffin.readLine();
+            System.out.println("Server: " + firstLine);
+            String message = sc.nextLine();
+            out.println(message);
+            firstLine = buffin.readLine();
+            System.out.println("Server: " + firstLine);
+
             while (true) {
                 // Prompt the client user for a message
-                System.out.println("Your message:");
+                System.out.print("Communication to the bank >> ");
                 message = sc.nextLine();
 
                 // Send the client user's message to the server
@@ -38,22 +45,18 @@ public class Client {
                     System.out.println("Client is closing the connection.");
                     break;
                 }
-
-                // Check and read all messages from the server
                 String line;
-                while (buffin.ready()) {
-                    line = buffin.readLine();
-                    if (line != null) {
-                        // Print the received line to the console
-                        System.out.println("Server: " + line);
 
-                        // If the server sends "exit", break the loop and close the connection
-                        if (line.equalsIgnoreCase("exit")) {
-                            System.out.println("Server has disconnected.");
-                            return;
-                        }
+                while ((line = buffin.readLine()) != null) {
+                    System.out.println("Server: " + line);
+                    if (line.equalsIgnoreCase("Goodbye!")) {
+                        client.close();
+                        System.out.println("Server has disconnected.");
+                        return;
                     }
+                    break;
                 }
+
             }
         } catch (IOException e) {
             // Handle any IO exceptions that occur

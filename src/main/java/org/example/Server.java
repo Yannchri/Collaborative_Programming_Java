@@ -1,32 +1,35 @@
 package org.example;
 
-import java.io.IOException;
+import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.concurrent.ConcurrentHashMap;
+import org.example.Command.*;
 
 public class Server {
+    private static final int PORT = 45000;
+    private static ConcurrentHashMap<String, Account> accounts = new ConcurrentHashMap<>();
+    private static Invoker invoker = new Invoker();
+
     public static void main(String[] args) {
-        try {
-            // Create a server socket that listens on port 45000
-            ServerSocket serverSocket = new ServerSocket(45000);
-            System.out.println("Server started and waiting for clients to connect...");
+        setupCommands();
+
+        try (ServerSocket serverSocket = new ServerSocket(PORT)) {
+            System.out.println("Server is running on port " + PORT);
 
             while (true) {
-                // Accept an incoming client connection
                 Socket clientSocket = serverSocket.accept();
-                System.out.println("Client connected.");
-
-                // Create a new thread to handle the client using AcceptClient class
-                Thread clientThread = new Thread(new Accept_client(clientSocket));
-                clientThread.start();
-
-
+                new Thread(new Accept_client(clientSocket, accounts, invoker)).start();
+                System.out.println("New client connected");
             }
         } catch (IOException e) {
-            // Handle any IO exceptions that occur
-            throw new RuntimeException(e);
+            System.out.println("Server exception: " + e.getMessage());
+            e.printStackTrace();
         }
     }
 
-
+    private static void setupCommands() {
+        invoker.registerCommand("help", new HelpCommand());
+        // Note: No need to create accounts here, they will be created on client connection
+    }
 }
