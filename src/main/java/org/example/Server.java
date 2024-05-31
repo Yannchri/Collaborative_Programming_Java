@@ -1,35 +1,87 @@
 package org.example;
+import accountInfos.ClientInfos;
 
-import java.io.*;
+import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.util.concurrent.ConcurrentHashMap;
-import org.example.Command.*;
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class Server {
-    private static final int PORT = 45000;
-    private static ConcurrentHashMap<String, Account> accounts = new ConcurrentHashMap<>();
-    private static Invoker invoker = new Invoker();
 
-    public static void main(String[] args) {
-        setupCommands();
+    List<ClientInfos> listClient = new ArrayList<>();
 
-        try (ServerSocket serverSocket = new ServerSocket(PORT)) {
-            System.out.println("Server is running on port " + PORT);
+    public void addClient(ClientInfos clientInfos){
+        listClient.add(clientInfos);
+    }
+
+    public List<ClientInfos> getListCLient(){
+        return listClient;
+    }
+
+    public ClientInfos getClient(String number){
+        for(ClientInfos clientInfos : listClient){
+            // If username exists, delegate further processing to the next handler
+            if(clientInfos.getNumberPhone().equals(number)){
+                return clientInfos;
+            }
+        }
+        return null;
+    }
+
+    public void start (){
+        try{
+            // Create a server socket that listens on port 45000
+            ServerSocket serverSocket = new ServerSocket(45000);
+            System.out.println("Server started and waiting for clients to connect...");
 
             while (true) {
+                // Accept an incoming client connection
                 Socket clientSocket = serverSocket.accept();
-                new Thread(new Accept_client(clientSocket, accounts, invoker)).start();
-                System.out.println("New client connected");
+                System.out.println("Client connected.");
+
+                // Create a new thread to handle the client using AcceptClient class
+                Thread clientThread = new Thread(new ClientHandler(clientSocket,this));
+                clientThread.start();
+                System.out.println(this);
+
             }
         } catch (IOException e) {
-            System.out.println("Server exception: " + e.getMessage());
-            e.printStackTrace();
+            // Handle any IO exceptions that occur
+            throw new RuntimeException(e);
         }
     }
 
-    private static void setupCommands() {
-        invoker.registerCommand("help", new HelpCommand());
-        // Note: No need to create accounts here, they will be created on client connection
+    public static void main(String[] args) {
+        Server server = new Server();
+        server.start();
     }
+
+
+
+    /*public static void main(String[] args) {
+        try {
+            // Create a server socket that listens on port 45000
+            ServerSocket serverSocket = new ServerSocket(45000);
+            System.out.println("Server started and waiting for clients to connect...");
+
+            while (true) {
+                // Accept an incoming client connection
+                Socket clientSocket = serverSocket.accept();
+                System.out.println("Client connected.");
+
+                // Create a new thread to handle the client using AcceptClient class
+                Thread clientThread = new Thread(new ClientHandler(clientSocket,this));
+                clientThread.start();
+
+
+            }
+        } catch (IOException e) {
+            // Handle any IO exceptions that occur
+            throw new RuntimeException(e);
+        }
+    }*/
+
+
 }
