@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a74769c-d430-495f-a5e7-f5ae3b998832" name="Changes" comment="Server + Client update&#10;Command Pattern" />
+    <list default="true" id="0a74769c-d430-495f-a5e7-f5ae3b998832" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,43 +21,27 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Test_Yannick" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "history": [
-    {
-      "assignee": "MvUltimate"
-    }
-  ],
-  "lastFilter": {
-    "assignee": "MvUltimate"
-  }
-}]]></component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Yannchri/Collaborative_Programming_Java.git&quot;,
-    &quot;accountId&quot;: &quot;2c147799-13ad-43fb-b7c9-a06f9efe7037&quot;
-  }
-}</component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2guI7uIRYORjWtX9AxCb5Kfhb50" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Client.executor": "Run",
     "Application.Main.executor": "Run",
-    "Application.Server.executor": "Run",
-    "Multirun.Unnamed.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -63,44 +49,22 @@
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/marcv/kDrive/Dev/Pattern_Workspace",
+    "last_opened_file_path": "C:/Users/Smovi/IdeaProjects/Collaborative_Programming_Java",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\marcv\kDrive\Dev\Collaborative_Programming_Java\src\main\java\org\example" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Application.Client">
-    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Client" />
-      <module name="Collaborative_Programming_java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.Command.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="Collaborative_Programming_java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.state.*" />
+          <option name="PATTERN" value="org.example.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -108,33 +72,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Server" />
-      <module name="Collaborative_Programming_java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.Command.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Unnamed" type="Multirun" separateTabs="false" reuseTabsWithFailures="false" startOneByOne="true" markFailedProcess="true" hideSuccessProcess="false" delayTime="0.0">
-      <runConfiguration name="Client" type="Application" />
-      <method v="2" />
-    </configuration>
-    <list>
-      <item itemvalue="Application.Server" />
-      <item itemvalue="Application.Client" />
-      <item itemvalue="Application.Main" />
-      <item itemvalue="Multirun.Unnamed" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Client" />
-        <item itemvalue="Application.Server" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -142,8 +85,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17011.79" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17011.79" />
+        <option value="jdk-21.0.1-openjdk-21.0.1-4caba194b151-23eed401" />
       </set>
     </attachedChunks>
   </component>
@@ -157,42 +99,28 @@
       <updated>1716540875440</updated>
       <workItem from="1716540876518" duration="2000" />
       <workItem from="1716541536734" duration="126000" />
-      <workItem from="1716541750122" duration="2501000" />
-      <workItem from="1716883634603" duration="24766000" />
+      <workItem from="1716657652983" duration="17457000" />
+      <workItem from="1716708484776" duration="6578000" />
+      <workItem from="1716721685080" duration="19626000" />
+      <workItem from="1716804267511" duration="2063000" />
+      <workItem from="1716840676216" duration="2075000" />
+      <workItem from="1716974530629" duration="1618000" />
+      <workItem from="1716976163333" duration="5265000" />
     </task>
-    <task id="LOCAL-00001" summary="Push first code">
-      <option name="closed" value="true" />
-      <created>1716541947319</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1716541947319</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Server + Client update&#10;Command Pattern">
-      <option name="closed" value="true" />
-      <created>1716915150949</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1716915150949</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Server + Client update&#10;Command Pattern">
-      <option name="closed" value="true" />
-      <created>1716915171178</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1716915171178</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Push first code" />
-    <MESSAGE value="Server + Client update&#10;Command Pattern" />
-    <option name="LAST_COMMIT_MESSAGE" value="Server + Client update&#10;Command Pattern" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
