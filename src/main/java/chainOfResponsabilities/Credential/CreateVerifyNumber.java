@@ -13,7 +13,7 @@ import java.util.List;
 public class CreateVerifyNumber extends CreateHandler {
 
     // List of clients retrieved from the server
-    List<ClientInfos> clientList = server.getListCLient();
+    List<ClientInfos> clientList = server.getListClient();
 
     /**
      * Constructs a VerifyUsernameCredentialHandler with the specified server.

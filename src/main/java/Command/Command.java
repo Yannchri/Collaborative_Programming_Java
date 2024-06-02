@@ -1,4 +1,4 @@
-package org.example.Command;
+package Command;
 
 import java.io.PrintWriter;
 

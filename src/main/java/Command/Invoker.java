@@ -1,5 +1,4 @@
-package org.example.Command;
-
+package Command;
 import java.io.PrintWriter;
 import java.util.Map;
 import java.util.HashMap;

@@ -14,7 +14,7 @@ public class LoginVerifyPassword extends LoginHandler{
 
     @Override
     public ClientInfos forwardNextVerification(LoginRequest loginRequest) {
-        List<ClientInfos> clientList = server.getListCLient();
+        List<ClientInfos> clientList = server.getListClient();
         // Iterate through the list of clients to find a match
         for (ClientInfos client : clientList) {
             if (client.getNumberPhone().equals(loginRequest.getNumber())) {

@@ -16,7 +16,7 @@ public class Server {
         listClient.add(clientInfos);
     }
 
-    public List<ClientInfos> getListCLient(){
+    public List<ClientInfos> getListClient(){
         return listClient;
     }
 

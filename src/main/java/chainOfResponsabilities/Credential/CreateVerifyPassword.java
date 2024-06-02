@@ -15,7 +15,7 @@ import java.util.List;
 public class CreateVerifyPassword extends CreateHandler {
 
     // List of clients retrieved from the server
-    List<ClientInfos> clientList = server.getListCLient();
+    List<ClientInfos> clientList = server.getListClient();
 
     /**
      * Constructs a VerifyPasswordCredentialHandler with the specified server.

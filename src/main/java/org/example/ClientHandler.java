@@ -1,6 +1,7 @@
 package org.example;
 
 import accountInfos.ClientInfos;
+import Command.*;
 import state.*;
 
 import java.io.*;
@@ -17,7 +18,8 @@ public class ClientHandler implements Runnable {
     private State stateLogin;
     private State stateLogged;
     private State stateTransaction;
-
+    private Invoker invoker;
+    private PrintWriter writer;
 
 
     private State stateConsultSolde;
@@ -37,6 +39,8 @@ public class ClientHandler implements Runnable {
     public ClientHandler(Socket clientSocket,Server server) throws IOException {
         this.clientSocket = clientSocket;
         this.server= server;
+        this.invoker = new Invoker();
+        this.writer = new PrintWriter(clientSocket.getOutputStream(), true);
         stateCreateAccount = new StateCreateAccount(this,server);
         stateLogin = new StateLogin(this,server);
         stateLogged = new StateLogged(this);
@@ -48,6 +52,11 @@ public class ClientHandler implements Runnable {
         this.currentState = stateIdle;
         System.out.println(server);
     }
+
+    public Invoker getInvoker() {
+        return invoker;
+    }
+
 
     @Override
     public void run() {
@@ -67,7 +76,7 @@ public class ClientHandler implements Runnable {
                 if ((message = in.readLine()) != null) {
                     //Print on the serveur the message of the client
                     System.out.println("Received: " + message);
-                    //The actual state handle the request and verify what shee needs to do
+                    //The actual state handle the request and verify what he needs to do
                     currentState.handleRequest(message);
                     //Print in which state the client is
                     sendMessage(currentState.stateInfos());
@@ -143,4 +152,7 @@ public class ClientHandler implements Runnable {
     }
 
 
+    public PrintWriter getWriter() {
+        return writer;
+    }
 }
