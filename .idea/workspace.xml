@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a74769c-d430-495f-a5e7-f5ae3b998832" name="Changes" comment="Server + Client update&#10;Command Pattern">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_31_05_2024_10_41__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_31_05_2024_10_41__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_31_05_2024_10_59__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_31_05_2024_10_59__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/chainOfResponsabilities/Credential/CreateVerifyNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chainOfResponsabilities/Credential/CreateVerifyNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/chainOfResponsabilities/Login/LoginVerifyNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chainOfResponsabilities/Login/LoginVerifyNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/chainOfResponsabilities/Login/LoginVerifyPassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chainOfResponsabilities/Login/LoginVerifyPassword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/chainOfResponsabilities/Transaction/VerifyDestinationTransactionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chainOfResponsabilities/Transaction/VerifyDestinationTransactionHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,12 +34,14 @@
     &quot;assignee&quot;: &quot;MvUltimate&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Yannchri/Collaborative_Programming_Java.git&quot;,
-    &quot;accountId&quot;: &quot;2c147799-13ad-43fb-b7c9-a06f9efe7037&quot;
-  }
-}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="6edc4d76-b83f-40fe-975f-238952f7d1df" />
+        <option name="url" value="https://github.com/Yannchri/Collaborative_Programming_Java.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -167,7 +165,7 @@
       <workItem from="1716541536734" duration="126000" />
       <workItem from="1716541750122" duration="2501000" />
       <workItem from="1716883634603" duration="24766000" />
-      <workItem from="1717337652914" duration="1306000" />
+      <workItem from="1717337652914" duration="3065000" />
     </task>
     <task id="LOCAL-00001" summary="Push first code">
       <option name="closed" value="true" />
@@ -193,7 +191,23 @@
       <option name="project" value="LOCAL" />
       <updated>1716915171178</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Server + Client update&#10;Command Pattern">
+      <option name="closed" value="true" />
+      <created>1717339200170</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1717339200170</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Server + Client update&#10;Command Pattern">
+      <option name="closed" value="true" />
+      <created>1717339213105</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1717339213105</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

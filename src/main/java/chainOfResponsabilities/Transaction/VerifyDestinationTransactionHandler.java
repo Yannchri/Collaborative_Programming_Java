@@ -19,9 +19,14 @@ public class VerifyDestinationTransactionHandler extends TransactionHandler {
         ClientInfos receiver = server.getClient(transactionRequest.getReceiver());
             // If username exists, delegate further processing to the next handler
             if(receiver !=null){
+                //If the receiver is the same than the sender
+                if(receiver.getNumberPhone().equals(transactionRequest.getSender().getNumberPhone())){
+                    return "You can't use this feature to transfer to yourself";
+                }
                 return this.transactionHandlerChain.forwardTransaction(transactionRequest);
             }
-        return "This destination number doesn't exist"; // Username does not exist
+
+            return "This destination number doesn't exist"; // Username does not exist
         }
 
     }
