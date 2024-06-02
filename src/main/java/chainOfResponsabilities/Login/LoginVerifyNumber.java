@@ -12,12 +12,11 @@ public class LoginVerifyNumber extends LoginHandler{
 
     @Override
     public ClientInfos forwardNextVerification(LoginRequest loginRequest) {
-        List<ClientInfos> clientList = server.getListClient();
-        for(ClientInfos clientInfos : clientList){
-            // If username exists, delegate further processing to the next handler
-            if(clientInfos.getNumberPhone().equals(loginRequest.getNumber())){
-                return this.loginHandlerChain.forwardNextVerification(loginRequest);
-            }
+
+        ClientInfos clientInfos = server.getClient(loginRequest.getNumber());
+        //If client exist we can continue the verifications
+        if(clientInfos!=null){
+            return this.loginHandlerChain.forwardNextVerification(loginRequest);
         }
         return null; // Username does not exist
     }

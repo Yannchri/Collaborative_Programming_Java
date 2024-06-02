@@ -35,11 +35,10 @@ public class CreateVerifyNumber extends CreateHandler {
      */
     @Override
     public String forwardCreateAccount(CreateRequest creationRequest) {
-        // Iterate through the list of clients to check if the username already exists
-        for (ClientInfos client : clientList) {
-            if (client.getNumberPhone().equals(creationRequest.getNumber())) {
-                return "Username already Exist";  // Username already exists
-            }
+
+        ClientInfos clientInfos = server.getClient(creationRequest.getNumber());
+        if(clientInfos !=null){
+            return "Username already exist";  // Username already exists
         }
         return this.credentialHandlerChain.forwardCreateAccount(creationRequest);  // Username is available go to check password
     }

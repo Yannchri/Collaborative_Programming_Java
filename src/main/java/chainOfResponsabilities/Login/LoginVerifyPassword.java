@@ -14,14 +14,11 @@ public class LoginVerifyPassword extends LoginHandler{
 
     @Override
     public ClientInfos forwardNextVerification(LoginRequest loginRequest) {
-        List<ClientInfos> clientList = server.getListClient();
-        // Iterate through the list of clients to find a match
-        for (ClientInfos client : clientList) {
-            if (client.getNumberPhone().equals(loginRequest.getNumber())) {
-                if (client.getPassword().equals(loginRequest.getPassword())) {
-                    return client; // Login credentials are correct return the client
-                }
-            }
+
+        ClientInfos clientInfos = server.getClient(loginRequest.getNumber());
+        //If the password is equal to the request
+        if (clientInfos.getPassword().equals(loginRequest.getPassword())) {
+            return clientInfos; // Login credentials are correct return the client
         }
         return null; // Login credentials are incorrect
     }
