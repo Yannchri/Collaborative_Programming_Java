@@ -4,8 +4,6 @@ import Command.*;
 import accountInfos.ClientInfos;
 import org.example.ClientHandler;
 
-import java.io.PrintWriter;
-
 public class StateLogged implements State{
 
 
@@ -76,10 +74,6 @@ public class StateLogged implements State{
 
     }
 
-    @Override
-    public void chargeAmount() {
-
-    }
 
     @Override
     public void transaction() {

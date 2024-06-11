@@ -23,10 +23,6 @@ public class ClientHandler implements Runnable {
     private PrintWriter writer;
 
 
-    private State stateConsultSolde;
-
-    private State stateConsultTransactions;
-
     //The server référence who handle the requests
     private Server server;
 
@@ -109,9 +105,6 @@ public class ClientHandler implements Runnable {
     //All the different Getter for each State and the setter
     public void setState(State state) {
         this.currentState = state;
-    }
-    public State getActualState(){
-        return currentState;
     }
 
     public State getStateCreateAccount() {

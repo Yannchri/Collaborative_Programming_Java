@@ -1,7 +1,6 @@
 package state;
 
 import org.example.ClientHandler;
-import java.io.IOException;
 
 /**
  * The StateIdle class represents the idle state in the state machine pattern.
@@ -63,11 +62,6 @@ public class StateIdle implements State {
 
     @Override
     public void login() {
-
-    }
-
-    @Override
-    public void chargeAmount() {
 
     }
 

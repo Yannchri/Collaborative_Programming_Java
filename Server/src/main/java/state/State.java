@@ -15,7 +15,6 @@ public interface State {
      void createAccount();
      void login();
 
-     void chargeAmount();
 
      void transaction();
      /**

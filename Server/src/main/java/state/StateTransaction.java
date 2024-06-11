@@ -1,7 +1,6 @@
 package state;
 
 import chainOfResponsabilities.Transaction.TransactionChain;
-import chainOfResponsabilities.Transaction.TransactionHandler;
 import chainOfResponsabilities.Transaction.TransactionRequest;
 import org.example.ClientHandler;
 import org.example.Server;
@@ -61,11 +60,6 @@ public class StateTransaction implements State{
 
     @Override
     public void login() {
-
-    }
-
-    @Override
-    public void chargeAmount() {
 
     }
 

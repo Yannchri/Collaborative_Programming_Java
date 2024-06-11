@@ -1,7 +1,5 @@
 package accountInfos; // Declares the package name
 
-import accountInfos.Account; // Imports the Account class from the same package
-
 // Class representing a transaction
 public class Transactions {
 

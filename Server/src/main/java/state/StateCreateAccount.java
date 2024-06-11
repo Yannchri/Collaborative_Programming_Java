@@ -72,10 +72,6 @@ public class StateCreateAccount implements State{
 
     }
 
-    @Override
-    public void chargeAmount() {
-
-    }
 
     @Override
     public void transaction() {

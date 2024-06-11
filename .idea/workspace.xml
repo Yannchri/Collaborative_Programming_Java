@@ -4,31 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a74769c-d430-495f-a5e7-f5ae3b998832" name="Changes" comment="Delete unused files">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Command/BalanceCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Command/TransferCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Command/WithdrawCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_31_05_2024_10_37__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_31_05_2024_10_37__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_31_05_2024_10_51__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_31_05_2024_10_51__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_31_05_2024_11_33__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_31_05_2024_11_33__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31_05_2024_10_38__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31_05_2024_10_38__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/chainOfResponsabilities/Credential/CreateVerifyNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chainOfResponsabilities/Credential/CreateVerifyNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/chainOfResponsabilities/Credential/CreateVerifyPassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chainOfResponsabilities/Credential/CreateVerifyPassword.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/chainOfResponsabilities/Login/LoginVerifyNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chainOfResponsabilities/Login/LoginVerifyNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/chainOfResponsabilities/Login/LoginVerifyPassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chainOfResponsabilities/Login/LoginVerifyPassword.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Command/Account.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Command/BalanceCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Command/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Command/Command.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Command/DepositCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Command/DepositCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Command/HelpCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Command/HelpCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Command/Invoker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Command/Invoker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Command/Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Command/Receiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Command/TransferCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Command/WithdrawCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/state/StateLogged.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/state/StateLogged.java" afterDir="false" />
+    <list default="true" id="0a74769c-d430-495f-a5e7-f5ae3b998832" name="Changes" comment="Add Comment">
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/Command/HelpCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/Command/HelpCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/accountInfos/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/accountInfos/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/accountInfos/Transactions.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/accountInfos/Transactions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/org/example/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/ClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/state/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/state/State.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/state/StateIdle.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/state/StateIdle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="3_patterns" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -93,7 +75,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "3__patterns",
+    "git-widget-placeholder": "Final",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/marcv/kDrive/Dev/Pattern_Workspace",
@@ -117,7 +99,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Multirun.Unnamed">
+  <component name="RunManager" selected="Application.Server">
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Client" />
       <module name="Collaborative_Programming_java" />
@@ -177,7 +159,6 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.src.main.java.org.example.Client" />
       <item itemvalue="Application.Server" />
       <item itemvalue="Application.Client" />
       <item itemvalue="Application.Main" />
@@ -185,7 +166,6 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.src.main.java.org.example.Client" />
         <item itemvalue="Application.Server" />
         <item itemvalue="Application.Client" />
         <item itemvalue="Application.Main" />
@@ -253,7 +233,23 @@
       <option name="project" value="LOCAL" />
       <updated>1717148281158</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add Command Pattern">
+      <option name="closed" value="true" />
+      <created>1718121098754</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1718121098754</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add Comment">
+      <option name="closed" value="true" />
+      <created>1718122072244</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1718122072244</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,6 +259,8 @@
     <MESSAGE value="Push first code" />
     <MESSAGE value="Server + Client update&#10;Command Pattern" />
     <MESSAGE value="Delete unused files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Delete unused files" />
+    <MESSAGE value="Add Command Pattern" />
+    <MESSAGE value="Add Comment" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Comment" />
   </component>
 </project>

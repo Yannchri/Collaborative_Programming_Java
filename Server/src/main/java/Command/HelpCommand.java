@@ -21,6 +21,6 @@ public class HelpCommand implements Command {
         helpMessage.append("  exit - Disconnects from the server.\n");
 
         // Writing the help message to the PrintWriter
-        writer.println(helpMessage.toString());
+        writer.println(helpMessage);
     }
 }

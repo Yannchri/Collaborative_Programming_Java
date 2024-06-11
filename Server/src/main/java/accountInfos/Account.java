@@ -3,7 +3,6 @@ package accountInfos; // Package declaration
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import accountInfos.*; // Importing other classes from the same package
 
 /**
  * The Account class represents a bank account.

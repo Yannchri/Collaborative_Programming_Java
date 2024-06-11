@@ -1,7 +1,5 @@
 package state;
 
-import chainOfResponsabilities.Credential.CreateChain;
-import chainOfResponsabilities.Credential.CreateRequest;
 import chainOfResponsabilities.Login.LoginChain;
 import chainOfResponsabilities.Login.LoginRequest;
 import org.example.ClientHandler;
@@ -77,10 +75,6 @@ public class StateLogin implements State {
         // Implementation for login
     }
 
-    @Override
-    public void chargeAmount() {
-        // Implementation for charging amount
-    }
 
     @Override
     public void transaction() {
