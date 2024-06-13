@@ -20,4 +20,6 @@ java -jar client.jar
 Après avoir lancé les applications serveur et client :
 - **Serveur** : Le serveur commencera automatiquement à écouter les connexions entrantes.
 - **Client** : Vous pouvez connecter le client au serveur en spécifiant l'adresse IP du serveur. Une fois connecté, vous pourrez envoyer et recevoir des messages en temps réel.
-- L'interface du client permet d'envoyer des commandes spécifiques pour interagir avec le serveur. (Vous pourriez ajouter des exemples de commandes si nécessaire.)
+- L'interface du client permet d'envoyer des commandes spécifiques pour interagir avec le serveur.
+
+L'utilisation du programme est décrite dans le UserManual.
