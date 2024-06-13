@@ -1,6 +1,6 @@
 package state;
 
-import Command.*;
+import command.*;
 import accountInfos.ClientInfos;
 import org.example.ClientHandler;
 

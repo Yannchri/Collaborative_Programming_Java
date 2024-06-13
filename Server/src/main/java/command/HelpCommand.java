@@ -1,11 +1,11 @@
-package Command; // Package declaration
+package command; // Package declaration
 
 import java.io.PrintWriter; // Importing PrintWriter class from java.io package
 
-// Command for displaying help message
+// command for displaying help message
 public class HelpCommand implements Command {
 
-    // Overriding the execute method defined in the Command interface
+    // Overriding the execute method defined in the command interface
     @Override
     public void execute(PrintWriter writer) {
         // Creating a StringBuilder to build the help message

@@ -1,7 +1,7 @@
 package org.example;
 
 import accountInfos.ClientInfos;
-import Command.*;
+import command.*;
 import state.*;
 
 import java.io.*;
@@ -14,11 +14,9 @@ public class ClientHandler implements Runnable {
     //All the different state
     private State currentState;
     private State stateCreateAccount;
-    private State stateDeposit;
     private State stateIdle;
     private State stateLogin;
     private State stateLogged;
-    private State stateTransaction;
     private Invoker invoker;
     private PrintWriter writer;
 
