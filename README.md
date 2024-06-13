@@ -1,25 +1,35 @@
-# Collaborativ Programming - Twint-like System
+# Collaborative Programming - Twint-like System
 
 ## Description
-Ce projet, développé en Java, vise à établir une communication entre un serveur et un client via des fichiers `.jar`. Il implémente trois design patterns principaux : (ici, vous pourriez spécifier lesquels, par exemple, Singleton, Observer, Factory, etc.), ce qui facilite la modularité et l'extensibilité du système. Ce système type "Twint" permet une interaction dynamique et en temps réel entre les utilisateurs et le serveur.
+This Java-developed project establishes communication between a server and a client using `.jar` files. 
+It leverages three principal design patterns: 
+- Chain of Responsibility
+- Command
+- State 
+ 
+These design patterns enhance the system's modularity and extensibility. 
+The "Twint-like" allows real-time interaction between users and the server.
 
 ## Installation
-Pour installer et exécuter ce projet, suivez les étapes suivantes :
-1. Téléchargez les fichiers `.jar` depuis le dépôt GitHub (ajouter le lien ici).
-2. Ouvrez un terminal ou une invite de commande.
-3. Naviguez jusqu'au dossier où vous avez enregistré les fichiers.
-4. Pour lancer le serveur, exécutez :
+To install and run this project, follow these steps:
+1. Download the `.jar` files from the GitHub repository.
+2. Open a terminal or command prompt.
+3. Navigate to the directory where you saved the files.
+4. To launch the server, execute the following command:
 ```
-java -jar server.jar
+java -jar Server.jar
 ```
-5. Pour lancer le client, exécutez dans un autre terminal :
-```
-java -jar client.jar
-```
-## Utilisation
-Après avoir lancé les applications serveur et client :
-- **Serveur** : Le serveur commencera automatiquement à écouter les connexions entrantes.
-- **Client** : Vous pouvez connecter le client au serveur en spécifiant l'adresse IP du serveur. Une fois connecté, vous pourrez envoyer et recevoir des messages en temps réel.
-- L'interface du client permet d'envoyer des commandes spécifiques pour interagir avec le serveur.
 
-L'utilisation du programme est décrite dans le UserManual.
+5. To launch the client, execute in another terminal:
+```
+java -jar Client.jar
+```
+
+
+## Usage
+Once the server and client applications are launched:
+- **Server**: The server automatically starts listening for incoming connections.
+- **Client**: Connect the client to the server by specifying the server's IP address. Once connected, you will be able to send and receive messages in real-time. The client interface also allows sending specific commands to interact with the server.
+- The client interface allows sending specific commands to interact with the server.
+
+- The usage of the program is described in the User Manual.
