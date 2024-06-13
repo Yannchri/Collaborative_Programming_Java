@@ -4,13 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a74769c-d430-495f-a5e7-f5ae3b998832" name="Changes" comment="Add Comment">
-      <change beforePath="$PROJECT_DIR$/Server/src/main/java/Command/HelpCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/Command/HelpCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/main/java/accountInfos/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/accountInfos/Account.java" afterDir="false" />
+    <list default="true" id="0a74769c-d430-495f-a5e7-f5ae3b998832" name="Changes" comment="Delete unused imports">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_06_2024_15_00_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_06_2024_15_00__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/Command/TransactionCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/Command/TransactionCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/accountInfos/ClientInfos.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/accountInfos/ClientInfos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/src/main/java/accountInfos/Transactions.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/accountInfos/Transactions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/main/java/org/example/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/ClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/main/java/state/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/state/State.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/main/java/state/StateIdle.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/state/StateIdle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/org/example/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/state/StateTransaction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/~$er Manual.docx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +71,7 @@
   "keyToString": {
     "Application.Client.executor": "Run",
     "Application.Main.executor": "Run",
+    "Application.Server (1).executor": "Run",
     "Application.Server.executor": "Run",
     "Application.src.main.java.org.example.Client.executor": "Run",
     "Multirun.Unnamed.executor": "Run",
@@ -99,7 +103,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Server">
+  <component name="RunManager" selected="Application.Server (1)">
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Client" />
       <module name="Collaborative_Programming_java" />
@@ -139,6 +143,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Server (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Server" />
+      <module name="Server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Server" />
       <module name="Collaborative_Programming_java" />
@@ -159,6 +176,7 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Application.Server (1)" />
       <item itemvalue="Application.Server" />
       <item itemvalue="Application.Client" />
       <item itemvalue="Application.Main" />
@@ -166,6 +184,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Server (1)" />
         <item itemvalue="Application.Server" />
         <item itemvalue="Application.Client" />
         <item itemvalue="Application.Main" />
@@ -192,6 +211,7 @@
       <workItem from="1716541536734" duration="126000" />
       <workItem from="1716541750122" duration="2501000" />
       <workItem from="1716883634603" duration="24766000" />
+      <workItem from="1718280290547" duration="4336000" />
     </task>
     <task id="LOCAL-00001" summary="Push first code">
       <option name="closed" value="true" />
@@ -249,7 +269,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718122072244</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Delete unused imports">
+      <option name="closed" value="true" />
+      <created>1718122475041</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1718122475041</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,6 +289,7 @@
     <MESSAGE value="Delete unused files" />
     <MESSAGE value="Add Command Pattern" />
     <MESSAGE value="Add Comment" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Comment" />
+    <MESSAGE value="Delete unused imports" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete unused imports" />
   </component>
 </project>

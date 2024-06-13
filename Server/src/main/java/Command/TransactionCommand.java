@@ -25,9 +25,11 @@ public class TransactionCommand implements Command {
         // Iterating over each transaction in the list
         for (Transactions transactions : listTransaction) {
             // Checking if the transaction type is "Transaction" or "Deposit"
-            if (transactions.getType().equals("Transaction") || transactions.getType().equals("Deposit")) {
+            if (transactions.getType().equals("Transaction")) {
                 // Adding transaction details to the message
                 message += transactions.getInfosTransaction();
+            } else if (transactions.getType().equals("Deposit")) {
+                message += transactions.getInfosDeposit();
             }
         }
 

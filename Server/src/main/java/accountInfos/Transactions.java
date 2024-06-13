@@ -34,4 +34,12 @@ public class Transactions {
                 + "\nAmount : " + this.amount + "\n_______________\n";
     }
 
+    public String getInfosDeposit(){
+        // Constructs and returns a string containing transaction details
+        return "Transaction : "
+                + "\nType of transaction : " + this.type
+                + "\nDate : " + this.date
+                + "\nAmount : " + this.amount + "\n_______________\n";
+    }
+
 }

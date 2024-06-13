@@ -6,6 +6,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 
 public class Server {
@@ -36,6 +37,7 @@ public class Server {
             ServerSocket serverSocket = new ServerSocket(45000);
             System.out.println("Server started and waiting for clients to connect...");
 
+
             while (true) {
                 try {
                     // Accept an incoming client connection
@@ -46,6 +48,7 @@ public class Server {
                     Thread clientThread = new Thread(new ClientHandler(clientSocket, this));
                     clientThread.start();
                     System.out.println(this);
+
                 } catch (IOException e) {
                     e.printStackTrace();
                 }

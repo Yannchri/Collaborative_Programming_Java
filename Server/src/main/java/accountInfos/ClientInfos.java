@@ -9,7 +9,6 @@ public class ClientInfos {
 
     private String numberPhone;
     private String password;
-    private String salt;
 
     private Account clientAccount;
 
@@ -33,10 +32,6 @@ public class ClientInfos {
 
     public String getPassword() {
         return password;
-    }
-
-    public String getSalt() {
-        return salt;
     }
 
     public Account getClientAccount() {
