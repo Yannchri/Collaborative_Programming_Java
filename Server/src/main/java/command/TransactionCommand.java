@@ -1,11 +1,11 @@
-package Command; // Package declaration
+package command; // Package declaration
 
 import accountInfos.ClientInfos; // Importing ClientInfos class from the accountInfos package
 import accountInfos.Transactions; // Importing Transactions class from the accountInfos package
 import java.io.PrintWriter; // Importing PrintWriter class from java.io package
 import java.util.List; // Importing List interface from java.util package
 
-// Command for displaying transactions
+// command for displaying transactions
 public class TransactionCommand implements Command {
     private ClientInfos account; // Declaring a private member variable of type ClientInfos to store the account information
 
@@ -14,7 +14,7 @@ public class TransactionCommand implements Command {
         this.account = account; // Assigning the provided ClientInfos object to the private member variable
     }
 
-    // Overriding the execute method defined in the Command interface
+    // Overriding the execute method defined in the command interface
     @Override
     public void execute(PrintWriter writer) {
         String message = ""; // Declaring a variable to store the transaction message

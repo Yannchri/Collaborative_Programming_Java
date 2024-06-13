@@ -1,4 +1,4 @@
-package Command; // Package declaration
+package command; // Package declaration
 
 import java.io.PrintWriter; // Importing PrintWriter class from java.io package
 import java.util.Map; // Importing Map interface from java.util package

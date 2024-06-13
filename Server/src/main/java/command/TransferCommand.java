@@ -1,4 +1,4 @@
-package Command;
+package command;
 
 import accountInfos.ClientInfos;
 import chainOfResponsabilities.Transaction.TransactionChain;
@@ -8,7 +8,7 @@ import org.example.Server;
 
 import java.io.PrintWriter;
 
-// Command for transferring money between accounts
+// command for transferring money between accounts
 public class TransferCommand implements Command {
     private ClientInfos fromAccount; // Sender's account
     private String toAccountString; // Receiver's account (as a string)
