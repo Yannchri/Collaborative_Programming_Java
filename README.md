@@ -9,18 +9,13 @@ Pour installer et exécuter ce projet, suivez les étapes suivantes :
 2. Ouvrez un terminal ou une invite de commande.
 3. Naviguez jusqu'au dossier où vous avez enregistré les fichiers.
 4. Pour lancer le serveur, exécutez :
-
+```
 java -jar server.jar
-
-markdown
-
+```
 5. Pour lancer le client, exécutez dans un autre terminal :
-
+```
 java -jar client.jar
-
-markdown
-
-
+```
 ## Utilisation
 Après avoir lancé les applications serveur et client :
 - **Serveur** : Le serveur commencera automatiquement à écouter les connexions entrantes.
